@@ -19,14 +19,33 @@
 			</view>
 			<view class="bookList">
 				<!-- 图片 作者 所属者 城市 距离 -->
-				<view class="item">
-					<image src="../../static/logo.png" mode="" style="width: 200rpx;height: 200rpx;"></image>
-					<view class="booksName">十萬個為什麼十萬個為什麼十萬個為什麼</view>
-					<view class="author">作者：小九</view>
-					<view class="city">城市：西安</view>
-					<view class="users">归属者：小九</view>
-					<view class="distance">距离：5.9KM</view>
-				</view>
+				<scroll-view class="scrollView"  scroll-x="true"  scroll-left="120" white-space='nowrap'  >
+					<view class="item">
+						<image src="../../static/logo.png" mode="" style="width: 200rpx;height: 200rpx;"></image>
+						<view class="booksName">十萬個為什麼十萬個為什麼十萬個為什麼</view>
+						<view class="author">作者：小九</view>
+					</view>
+					<view class="item">
+						<image src="../../static/logo.png" mode="" style="width: 200rpx;height: 200rpx;"></image>
+						<view class="booksName">十萬個為什麼十萬個為什麼十萬個為什麼</view>
+						<view class="author">作者：小九</view>
+					</view>
+					<view class="item">
+						<image src="../../static/logo.png" mode="" style="width: 200rpx;height: 200rpx;"></image>
+						<view class="booksName">十萬個為什麼十萬個為什麼十萬個為什麼</view>
+						<view class="author">作者：小九</view>
+					</view>
+					<view class="item">
+						<image src="../../static/logo.png" mode="" style="width: 200rpx;height: 200rpx;"></image>
+						<view class="booksName">十萬個為什麼十萬個為什麼十萬個為什麼</view>
+						<view class="author">作者：小九</view>
+					</view>
+					<view class="item">
+						<image src="../../static/logo.png" mode="" style="width: 200rpx;height: 200rpx;"></image>
+						<view class="booksName">十萬個為什麼十萬個為什麼十萬個為什麼</view>
+						<view class="author">作者：小九</view>
+					</view>
+				</scroll-view>
 			</view>
 		</view>
 		<!-- 新闻咨询 -->
@@ -62,7 +81,10 @@
 
 		},
 		methods: {
-
+scroll: function(e) {
+				console.log(e)
+				this.old.scrollTop = e.detail.scrollTop
+			},
 		}
 	}
 </script>
@@ -78,6 +100,14 @@
 		padding-left: 10rpx;
 		border-left: 10rpx solid red;
 		margin: 0 0 10rpx 0;
+	}
+	.hotBook .bookList .scrollView{
+			white-space: nowrap;
+			width: 100%;
+	}
+	.hotBook .bookList .scrollView .item{
+		display: inline-block;
+		padding: 0 10rpx;
 	}
 	.hotBook .bookList .item view {
 		font-size: 26rpx;
