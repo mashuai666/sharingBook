@@ -3,13 +3,53 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "共享图书"
 			}
 		}
-	],
+	    ,{
+            "path" : "pages/map/map",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "地图",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/me/me",
+            "style":                                                                                    
+            {
+                "navigationBarTitleText": "我的",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"tabBar": {
+	    "color": "#7A7E83",
+	    "selectedColor": "#3cc51f",
+	    "borderStyle": "black",
+	    "backgroundColor": "#ffffff",
+	    "list": [{
+	        "pagePath": "pages/index/index",
+	        "iconPath": "static/logo.png",
+	        "selectedIconPath": "static/logo.png",
+	        "text": "首页"
+	    }, {
+	        "pagePath": "pages/map/map",
+	        "iconPath": "static/logo.png",
+	        "selectedIconPath": "static/logo.png",
+	        "text": "地图"
+	    }, {
+	        "pagePath": "pages/me/me",
+	        "iconPath": "static/logo.png",
+	        "selectedIconPath": "static/logo.png",
+	        "text": "我的"
+	    }]
+	},
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
+		"navigationBarTitleText": "共享图书",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
 	}
