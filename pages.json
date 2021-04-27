@@ -24,6 +24,15 @@
             }
             
         }
+        ,{
+            "path" : "pages/booksDetail/booksDetail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "图书详情",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"tabBar": {
 	    "color": "#7A7E83",
